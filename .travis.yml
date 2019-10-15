@@ -33,11 +33,11 @@ script:
   - cordova build android
 
 before_deploy:
-  - git config --local user.name "StellarCN Travis CI"
-  - git config --local user.email "travis@stellarcn.org"
+  - git config --local user.name "abigonion"
+  - git config --local user.email "13178278508@163.com"
   - git tag "Debug-$(date +'%Y%m%d')-$(git log --format=%h -1)"
   - cd platforms/android/build/outputs/apk/debug/
-  - mv android-debug.apk "firefly-debug-$(date +'%Y%m%d')-$(git log --format=%h -1).apk"
+  - mv android-debug.apk "zioncoin-debug-$(date +'%Y%m%d')-$(git log --format=%h -1).apk"
 
 deploy:
   provider: releases
