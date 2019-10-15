@@ -32,7 +32,7 @@
 
 ## 开发
 ```
-# 可以使用cnpm或yarn代替npm
+# 可以使用cnpm代替npm
 
 # 需要安装cordova7.x的版本
 npm i -g cordova@7.1.0
