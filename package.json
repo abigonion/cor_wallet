@@ -29,7 +29,7 @@
   "dependencies": {
     "animate.css": ">3.5.2",
     "awesome-qr": "^1.2.0",
-    "axios": ">0.17.1",
+    "axios": "^0.18.1",
     "better-scroll": "^1.4.2",
     "bip39": "^2.4.0",
     "cordova": "^7.1.0",
@@ -67,7 +67,6 @@
     "js-nacl": "^1.2.2",
     "jsqr": "^1.1.1",
     "lib-flexible": "^0.3.2",
-    "lodash": ">=4.17.4",
     "moment": ">=2.20.1",
     "net": "^1.0.2",
     "nprogress": ">=0.2.0",
@@ -145,7 +144,7 @@
     "vue-template-compiler": ">=2.5.4",
     "vue-touch": ">=2.0.0-beta.4",
     "webpack": "^2.6.1",
-    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-bundle-analyzer": ">=3.3.2",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
