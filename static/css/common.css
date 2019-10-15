@@ -1,0 +1,495 @@
+/**
+ * @Author   strogt
+ * @DateTime 2019-03-26
+ * M端商城vue+flexible样式初始化/通用脚本
+ */
+
+@charset "utf-8";
+
+[v-cloak] {
+  display: none;
+}
+
+/*公共样式*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+applet,
+b,
+body,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+label,
+li,
+object,
+ol,
+p,
+pre,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+u,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+}
+
+ul,
+ol {
+  list-style: none outside none;
+}
+
+fieldset,
+img {
+  border: medium none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #333333;
+  background: #F4F5F7;
+  width: 100%;
+}
+
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+sub,
+sup {
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+blockquote,
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+i,
+cite,
+em,
+address {
+  font-style: normal;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+/* 链接 */
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: medium none;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+/* Clearfix,避免因子元素浮动而导致的父元素高度缺失能问题 */
+a.disabled,
+a.disabled:hover {
+  cursor: default;
+  pointer-events: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap {
+  width: 89.33333333333333%;
+  margin: 0 auto;
+}
+
+.white {
+  width: 100%;
+  background: #ffffff;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.nowrap {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.none {
+  display: none !important;
+}
+
+/* ==========================
+ * 为旧版本浏览器格式化Html5元素
+ * ========================== */
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+  display: block;
+}
+
+/* 菜单标题 */
+/* 主菜单标题 */
+.menu-tilte {
+  padding: 0.4rem 0;
+  font-size: 0.666667rem;
+  font-weight: bold;
+  color: #002251;
+}
+
+/* 二级标题 */
+.two-level-title {
+  padding: 0.24rem 0;
+  font-size: 0.48rem;
+  color: #002251;
+}
+
+.index,
+.assets,
+.wealth,
+.home {
+  padding-bottom: 1.306667rem;
+}
+
+/* 主题返回头部 */
+.goback-header {
+  width: 100%;
+  height: 1.306667rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: #191A45;
+}
+
+.goback-header .goback {
+  width: 0.2rem;
+  height: 0.4rem;
+  font-size: 0.48rem;
+  position: absolute;
+  left: 0.386667rem;
+  color: #D4D4DC;
+}
+
+.goback-header .goback-title {
+  font-size: 0.586667rem;
+}
+
+.goback-header p {
+  font-size: 0.453333rem;
+  position: absolute;
+  right: 0.32rem;
+}
+
+/* 白色主题返回头部 */
+.goback-header-white-themes {
+  width: 100%;
+  height: 1.306667rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: #FFFFFF;
+}
+
+.goback-header-white-themes .goback {
+  width: 0.2rem;
+  height: 0.4rem;
+  font-size: 0.48rem;
+  position: absolute;
+  left: 0.386667rem;
+  color: #D4D4DC;
+}
+
+.goback-header-white-themes .goback-title {
+  font-size: 0.586667rem;
+}
+
+.goback-header-white-themes p {
+  font-size: 0.453333rem;
+  position: absolute;
+  right: 0.32rem;
+}
+
+/* 头部补偿 */
+.nav-margin-top {
+  margin-top: 1.306667rem;
+}
+
+/* 通用input */
+.common-input-container {
+  margin-top: 0.453333rem;
+  position: relative;
+}
+
+.common-input-container .common-input {
+  width: 8.133333rem;
+  height: 1.173333rem;
+  border-radius: 0.24rem;
+  text-indent: 0.293333rem;
+  font-size: 0.426667rem;
+  background: rgba(155, 155, 155, 0.1);
+}
+
+.common-input-container span {
+  position: absolute;
+  top: 0.293333rem;
+  right: 0.56rem;
+  font-size: 0.426667rem;
+  color: #344563;
+}
+
+.common-input-container p {
+  position: absolute;
+  top: 0.293333rem;
+  right: 0.56rem;
+  font-size: 0.426667rem;
+  color: #4768F3;
+  font-weight: normal;
+}
+
+/* 阴影填充 */
+.shadow {
+  width: 100%;
+  height: 0.533333rem;
+}
+
+.shadow i{
+  display: block;
+  width: 100%;
+  height: 0.013333rem;
+  box-shadow: 0px 0.066667rem 0.2rem #000000;
+}
+
+/* 通用cell */
+.common-cell-container {
+  background: #ffffff;
+  width: 100%;
+  height: 1.813333rem;
+  border-bottom: 0.026667rem solid #F4F5F7;
+  display: flex;
+  align-items: center;
+}
+
+.common-cell-wrap {
+  padding: 0 0.426667rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.common-cell-wrap .left p {
+  color: #344563;
+  font-size: 0.426667rem;
+}
+
+.common-cell-wrap .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.common-cell-wrap .right span {
+  display: inline-block;
+  margin-right: 0.32rem;
+  color: #7E7E7E;
+  font-size: 0.426667rem;
+}
+
+.common-cell-wrap .right i {
+  display: inline-block;
+  width: 0.213333rem;
+  height: 0.373333rem;
+  background: url(/static/images/right_arrow.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* 登录 */
+.login-wrap{
+    width: 8.133333rem;
+    margin: 0 auto;
+}
+
+/* 极验 */
+/* 整体大小 */
+.geetest_wind.geetest_panel .geetest_panel_box.geetest_panelshowslide{
+    width: 8.133333rem !important;
+    height: 8.0rem !important;
+}
+
+/* 字体大小 */
+.geetest_holder.geetest_mobile.geetest_ant .geetest_slider .geetest_slider_track .geetest_slider_tip{
+    font-size: 0.32rem !important;
+}
+
+.geetest_holder.geetest_mobile.geetest_ant .geetest_widget .geetest_window .geetest_result .geetest_result_content{
+    font-size: 0.24rem !important;
+}
+
+/* Dialog弹出层 */
+.van-dialog__header{
+  font-size: 0.373333rem !important;
+  line-height: 1.32rem !important;
+}
+
+.van-dialog__message--has-title{
+
+}
+
+.van-dialog__message{
+  font-size: 0.32rem !important;
+  line-height: 1.266667rem !important;
+} 
+
+.van-button--large{
+  height: 1.333333rem !important;
+  line-height: 1.333333rem !important;
+  font-size: 0.32rem !important;
+} 
