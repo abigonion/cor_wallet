@@ -75,7 +75,7 @@
     "raf.js": ">=0.0.4",
     "shvl": ">=1.2.0",
     "stellar-hd-wallet": ">=0.0.4",
-    "stellar-sdk": "^0.10.3",
+    "stellar-sdk": "^8.2.3",
     "swiper": ">=4.0.7",
     "tls": "0.0.1",
     "uuid": ">=3.1.0",
